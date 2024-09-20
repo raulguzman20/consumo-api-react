@@ -8,17 +8,19 @@ body {
 .container {
   max-width: 400px; /* Ancho máximo del contenedor */
   margin: auto; /* Centra el contenedor */
-  padding: 20px; /* Espaciado interno */
+  padding: 30px; /* Espaciado interno */
   background: white; /* Fondo blanco */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  border-radius: 12px; /* Bordes redondeados */
+  border: 1px solid #ddd; /* Borde suave */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
 }
 
 h1 {
   text-align: center; /* Centra el título */
-  font-size: 1.8rem; /* Tamaño de la fuente */
+  font-size: 2rem; /* Tamaño de la fuente */
   color: #333; /* Color del texto */
-  margin-bottom: 20px; /* Espaciado inferior */
+  margin-bottom: 25px; /* Espaciado inferior */
+  font-weight: 500; /* Peso de la fuente */
 }
 
 .icon {
@@ -33,23 +35,30 @@ form {
 
 input {
   margin-bottom: 15px; /* Espaciado entre los campos */
-  padding: 10px; /* Padding para los inputs */
-  border: 1px solid #ddd; /* Borde de los inputs */
-  border-radius: 4px; /* Esquinas redondeadas */
+  padding: 12px; /* Padding para los inputs */
+  border: 2px solid #ddd; /* Borde más grueso */
+  border-radius: 8px; /* Esquinas más redondeadas */
+  transition: border-color 0.3s; /* Transición suave al cambiar el borde */
+}
+
+input:focus {
+  border-color: #007bff; /* Cambia el borde al enfocar */
+  outline: none; /* Sin outline */
 }
 
 button {
-  padding: 10px; /* Padding del botón */
+  padding: 12px; /* Padding del botón */
   background-color: #007bff; /* Color de fondo del botón */
   color: white; /* Color del texto */
   border: none; /* Sin borde */
-  border-radius: 4px; /* Esquinas redondeadas */
+  border-radius: 8px; /* Esquinas redondeadas */
   cursor: pointer; /* Cambia el cursor al pasar el ratón */
-  margin-right: 10px; /* Espacio entre botones */
+  transition: background-color 0.3s; /* Transición suave */
+  margin: 10px 0; /* Espacio entre botones */
 }
 
 button:hover {
-  background-color: #686060; /* Color al pasar el ratón */
+  background-color: #0056b3; /* Color más oscuro al pasar el ratón */
 }
 
 button.eliminar {
@@ -57,23 +66,30 @@ button.eliminar {
 }
 
 button.eliminar:hover {
-  background-color: #d32f2f; /* Color al pasar el ratón para eliminar */
+  background-color: #c62828; /* Color más oscuro al pasar el ratón para eliminar */
 }
 
 ul {
   list-style-type: none; /* Sin viñetas */
   padding: 0; /* Sin padding */
-  margin-top: 20px; /* Espaciado superior */
+  margin-top: 30px; /* Espaciado superior */
 }
 
 li {
-  background: #f9f9f9; /* Fondo para cada elemento de la lista */
+  background: #ffffff; /* Fondo blanco para cada elemento */
   margin: 10px 0; /* Espaciado entre elementos */
   padding: 15px; /* Padding interno */
-  border-radius: 4px; /* Esquinas redondeadas */
-  border: 1px solid #ccc; /* Borde */
+  border-radius: 8px; /* Esquinas redondeadas */
+  border: 1px solid #ddd; /* Borde suave */
+  transition: background-color 0.3s; /* Transición suave al cambiar el fondo */
 }
 
 li:hover {
-  background: #e9ecef; /* Fondo más oscuro al pasar el ratón */
+  background: #f1f1f1; /* Fondo más oscuro al pasar el ratón */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+  margin-top: 10px; /* Espacio superior */
 }
